@@ -1,7 +1,7 @@
 services:
   - type: web
     plan: free
-    name: django-app
+    name: xetra-app
     runtime: python
     repo: https://github.com/render-examples/django.git
     buildCommand: './build.sh'
@@ -13,5 +13,5 @@ services:
           property: connectionString
 
 databases:
-  - name: django-app-db
+  - name: xetra-db
     plan: free
